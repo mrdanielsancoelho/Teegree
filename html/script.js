@@ -16,7 +16,7 @@ function onload(){
   dingSound = document.getElementById("Ding");
 
   socket.on("join", function(room){
-    chatRoom.innerHTML = "Chatroom : " + room;
+    chatRoom.innerHTML = "Sala : " + room;
   })
 
   socket.on("recieve", function(message){
