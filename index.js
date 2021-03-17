@@ -13,7 +13,7 @@ app.use(express.static(gamedirectory));
 
 httpserver.listen(3000);
 
-var rooms = [];
+var rooms = []; //Salas
 var usernames = [];
 
 io.on('connection', function(socket){
