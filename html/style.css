@@ -1,6 +1,6 @@
 body{
   background: #303030;
-  color: blanchedalmond;
+  color: #0f0;
   font-family: fantasy;
 }
 
@@ -85,4 +85,7 @@ input{
   color: #fff;
   background-color: #71c5ec;
   border: 1px solid #71c5ec;
+}
+#RoomID {
+  transform: translate(50%, 50%);
 }
