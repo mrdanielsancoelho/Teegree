@@ -1,7 +1,7 @@
 body{
   background: #303030;
-  color: #000;
-  font-family: 'Segoe UI';
+  color: blanchedalmond;
+  font-family: fantasy;
 }
 
 label{
@@ -9,33 +9,80 @@ label{
   display: inline-block;
   text-align: right;
 }
+#Title{
+  position: absolute;
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  float: right;
+  margin-top: 0;
+  color: #f00;
+  margin-left: 60%;
+  font-size: 300%;
+}
 
 input{
   background: #e5e5e5;
   color: #303030;
   font-size: 120%;
   border: 1px solid #000;
-  border-radius: 15px
+  border-radius: 1px;
 }
 
-.Message{
-  color: #a0a0a0;
-}
 
 #Main{
-  background: #fff;
-  background-image: url(https://i.ibb.co/12Qzm7j/teegree.png);
-  border-radius: 1%;
-  padding-left: 1%;
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  background-image: url(https://i.ibb.co/hd62S2M/Teegree.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border-radius:  30px;
+  padding-bottom: 500px;
+  padding-right: 50px;
 }
 
-#Title{
-  font-size: 300%;
-}
 #SendMessage {
-  background-color: #71c5ec;
   color: #fff;
-  border: none;
-  border-radius: 40%;
-  height: 40px;
+  background-color: #71c5ec;
+  border: 1px solid #71c5ec;
+}
+#AccessPort{
+  position: absolute;
+  height: 140px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: #f00;
+  padding: 20px;
+  float: left;
+  left: 0;
+  margin: 0;
+}
+#Chat{
+  
+  margin: 0;
+  float: right;
+  top: 50;
+  height:300px;
+}
+#Chat:start{
+  color: blanchedalmond;
+}
+#Chat p {
+  width: 200px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+#mess {
+  float: right;
+  position: fixe;
+  margin: 0;
+  height: 20px;
+  transform: translate(250px, 500px);
+}
+#ConnectButton {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #71c5ec;
+  border: 1px solid #71c5ec;
 }
