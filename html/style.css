@@ -30,7 +30,7 @@ input{
 
 
 #Main{
-  height: 90%;
+  height: 100%;
   width: 90%;
   background-color: #fff;
   background-image: url(https://i.ibb.co/hd62S2M/Teegree.png);
@@ -38,7 +38,7 @@ input{
   background-position-x: center;
   background-position-y: center;
   border-radius:  30px;
-  padding-bottom: 500px;
+  padding-bottom: 100%;
   padding-right: 50px;
 }
 
@@ -62,8 +62,8 @@ input{
   
   margin: 0;
   float: right;
-  top: 50;
-  height:300px;
+  top: 100;
+  height: 500px;
 }
 #Chat:start{
   color: blanchedalmond;
@@ -75,7 +75,7 @@ input{
 }
 #mess {
   float: right;
-  position: fixe;
+  position: fixed;
   margin: 0;
   height: 20px;
   transform: translate(250px, 500px);
@@ -88,4 +88,67 @@ input{
 }
 #RoomID {
   transform: translate(50%, 50%);
+}
+
+@media (max-height: 780px){
+  #Main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    background-image: url(https://i.ibb.co/hd62S2M/Teegree.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius:  30px;
+    padding-bottom: 100vh;
+    width: 100vw;
+  }
+  #mess {
+    position: absolute;
+    transform: translateX(100px) translateY(90vh);
+    height: 20px;
+    width: 200px;
+  }
+  #Title{
+    position: absolute;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    float: right;
+    margin-top: 0;
+    color: #f00;
+    margin-left: 70%;
+    font-size: 280%;
+  }
+  #AccessPort{
+    height: 180px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: rgba(29, 8, 8, 0.6);
+    padding: 20px;
+    float: left;
+  }
+  input{
+    height: 50px;
+    background: #e5e5e5;
+    color: #303030;
+    font-size: 120%;
+    border-radius: 5px;
+  }
+  #SendMessage {
+  transform: translateX(100px);
+    color: #fff;
+    background-color: #71c5ec;
+    border: 1px solid #71c5ec;
+  }
+  #Chat{
+
+    margin: 0;
+    float: right;
+    top: 40vh;
+    height: 90vh;
+  }
+  #Chat p {
+    width: 200px;
+    border-radius: 15px;
+  }
 }
